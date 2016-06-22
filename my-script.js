@@ -21,7 +21,7 @@ function changeComicReverse() {
 		comic_num -= 1;
 	}
 	current_comic = 'images/comics/comic-' + comic_num + '.png';
-	$('.current-comic').attr('src', current_comic)
+	$('#current-comic').attr('src', current_comic)
 }
 
 function buttonChangeListener() {
