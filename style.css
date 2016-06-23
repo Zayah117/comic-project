@@ -57,9 +57,24 @@ h1 {
 @media screen and (min-width: 850px) {
 	#ad-box {order: 1;}
 	#heading-box {order: 2;}
-	#left-box {order: 3; width: 25%;}
-	#comic-box {order: 4; width: 50%;}
-	#right-box {order: 5; width: 25%;}
-	#left-button {margin-right: 0;}
-	#right-button {margin-left: 0;}
+	#left-box {
+		order: 3; 
+		width: 20%;
+	}
+	#comic-box {
+		order: 4; 
+		width: 60%;
+	}
+	#right-box {
+		order: 5; 
+		width: 20%;
+	}
+	#left-button {
+		margin-top: 175px;
+		margin-right: 0;
+	}
+	#right-button {
+		margin-top: 175px;
+		margin-left: 0;
+	}
 }
