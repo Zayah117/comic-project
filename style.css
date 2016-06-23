@@ -7,10 +7,10 @@ h1 {
 }
 
 .container {
-	margin: 10px;
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 800px;
+	margin: 10px;
+	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -23,16 +23,16 @@ h1 {
 	max-width: 100%;
 }
 
-.button-view {
-	width: calc(50% - 20px);
-	margin: 10px;
-	min-width: 10px;
+#left-button {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.button {
+#right-button {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #ad-box {
@@ -46,10 +46,20 @@ h1 {
 	margin: 0 auto;
 }
 
+#left-box {
+	width: 50%;
+}
+
+#right-box {
+	width: 50%;
+}
+
 @media screen and (min-width: 850px) {
 	#ad-box {order: 1;}
 	#heading-box {order: 2;}
-	#left-box {order: 3;}
-	#comic-box {order: 4;}
-	#right-box {order: 5;}
+	#left-box {order: 3; width: 25%;}
+	#comic-box {order: 4; width: 50%;}
+	#right-box {order: 5; width: 25%;}
+	#left-button {margin-right: 0;}
+	#right-button {margin-left: 0;}
 }
