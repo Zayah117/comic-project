@@ -10,6 +10,9 @@ h1 {
 	margin: 10px;
 	display: flex;
 	flex-wrap: wrap;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .box {
@@ -26,12 +29,27 @@ h1 {
 	min-width: 10px;
 }
 
-.current-comic{
-	
-}
-
 .button {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#ad-box {
+	width: 70%;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+#comic-box {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 850px) {
+	#ad-box {order: 1;}
+	#heading-box {order: 2;}
+	#left-box {order: 3;}
+	#comic-box {order: 4;}
+	#right-box {order: 5;}
 }
