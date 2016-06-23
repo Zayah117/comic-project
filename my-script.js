@@ -1,8 +1,15 @@
 var current_comic = 'images/comics/comic-1.png';
 var comic_num = 1;
+// set this to as many comics as you have
 var comic_max = 3;
 
 function changeComic() {
+	/* This function checks to see if you are
+	on the last comic. If you are, it loops
+	around back to the first comic. If you are
+	not, it goes to the next comic. It then
+	updates the image on the webpage. */
+
 	if (comic_num >= comic_max) {
 		comic_num = 1;
 	}
@@ -14,6 +21,9 @@ function changeComic() {
 }
 
 function changeComicReverse() {
+	/* This function is the same as the one
+	above, but it goes backwards */
+
 	if (comic_num <= 1) {
 		comic_num = comic_max;
 	}
@@ -25,6 +35,9 @@ function changeComicReverse() {
 }
 
 function buttonChangeListener() {
+	/* Listens for button clicks and activates
+	the appropriate functions */
+
 	$('#left-button').click(changeComicReverse);
 	$('#right-button').click(changeComic);
 }
