@@ -54,6 +54,16 @@ h1 {
 	width: 50%;
 }
 
+/*minor media query for buttons before they move to the top*/
+@media screen and (min-width: 515px) {
+	#left-button {
+		margin-right: 50px;
+	}
+	#right-button {
+		margin-left: 50px;
+	}
+}
+
 @media screen and (min-width: 850px) {
 	#ad-box {order: 1;}
 	#heading-box {order: 2;}
