@@ -1,7 +1,7 @@
 var current_comic = 'images/comics/comic-1.png';
 var comic_num = 1;
 // set this to as many comics as you have
-var comic_max = 3;
+var comic_max = 7;
 
 function changeComic() {
 	/* This function checks to see if you are
